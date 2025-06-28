@@ -1,0 +1,56 @@
+[
+  {
+    "name": "GetAttributes",
+    "scriptFile": "CategoryMapper.FunctionApp.dll",
+    "entryPoint": "CategoryMapper.FunctionApp.GetAttributes.Run",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Anonymous",
+        "methods": [
+          "get"
+        ],
+        "route": "attributes",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetCategoriesByParent",
+    "scriptFile": "CategoryMapper.FunctionApp.dll",
+    "entryPoint": "CategoryMapper.FunctionApp.GetCategoriesByParent.Run",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Anonymous",
+        "methods": [
+          "get"
+        ],
+        "route": "categories",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  }
+]
