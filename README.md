@@ -1,25 +1,10 @@
-# 🧠 Product Catalogue Azure Functions (C#)
+# Product Catalogue Azure Functions (C#)
 
 This repository contains an Azure Functions project for managing a **product catalogue**, supporting API endpoints to fetch **categories** and **attributes** from a backend data stores:
 
 - **Azure Database for PostgreSQL Flexible Server** for relational data with managed identity authentication
 
----
-
-## 📦 Project Structure
-
-CategoryMapper.FunctionApp/
-│
-├── Data/ # EF DbContext
-├── Models/ # Models necesary
-├── Services/ # Service layer abstraction
-├── Functions/ # Azure Function endpoints (HTTP-triggered)
-├── Program.cs # Host registration
-
-CategoryMapper.Tests/
-├── Unit tests
-
-## 🔧 Function Endpoints
+## API Reference
 
 ### `GET /api/categories`
 
